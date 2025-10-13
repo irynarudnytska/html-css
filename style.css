@@ -1,0 +1,161 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.registration-form input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  padding-left: 14px;
+  box-sizing: border-box;
+  color: #a5a5a5;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.password-field-icon {
+  width: 100%;
+  position: relative;
+  max-width: 400px;
+}
+
+.password-field-icon input {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.password-field-icon svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.registration-form-btn {
+  margin-top: 25px;
+  margin-bottom: 36px;
+  border-radius: 5px;
+  background: #46a358;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #fff;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+p {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.social-media-registration {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-media-registration a {
+  color: #727272;
+  text-align: center;
+  font-family: "Cera Pro";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  text-decoration: none;
+}
+
+.separation-line {
+  margin-bottom: 27px;
+  text-align: center;
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.tabs {
+  margin-top: 52px;
+  margin: 0 auto;
+  padding-top: 52px;
+}
+
+.tabs button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.login-page-tab {
+  margin-right: 12px;
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.register-page-tab {
+  margin-left: 12px;
+  color: #46a358;
+  font-family: "Cera Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.bottom-line {
+  background: #46a358;
+}
+
+.close-button {
+  border: none;
+  background: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 1px;
+}
+
+.bottom-line {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #46a358;
+}
