@@ -1,9 +1,44 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.woff") format("woff"),
+    url("../fonts/CeraPro-Regular.eot") format("eot"),
+    url("../fonts/CeraPro-Regular.woff") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"),
+    url("../fonts/CeraPro-Medium.woff") format("woff"),
+    url("../fonts/CeraPro-Medium.eot") format("eot"),
+    url("../fonts/CeraPro-Medium.woff") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/CeraPro-Bold.woff") format("woff"),
+    url("../fonts/CeraPro-Bold.eot") format("eot"),
+    url("../fonts/CeraPro-Bold.woff") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   position: relative;
 }
 
@@ -12,8 +47,7 @@
   flex-direction: column;
   gap: 16px;
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 500px;
 }
 
 .registration-form input {
@@ -24,7 +58,7 @@
   padding-left: 14px;
   box-sizing: border-box;
   color: #a5a5a5;
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -34,20 +68,21 @@
 .password-field-icon {
   width: 100%;
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .password-field-icon input {
   width: 100%;
-  position: relative;
   box-sizing: border-box;
   padding-right: 40px;
 }
 
-.password-field-icon svg {
+.password-field-icon button {
   position: absolute;
   top: 10px;
+  bottom: 10px;
   right: 10px;
+  background-color: #ffffff;
 }
 
 .registration-form-btn {
@@ -58,7 +93,7 @@
   padding-top: 13px;
   padding-bottom: 13px;
   color: #fff;
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -69,7 +104,7 @@ p {
   margin-top: 40px;
   margin-bottom: 14px;
   color: #3d3d3d;
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -85,7 +120,7 @@ p {
 .social-media-registration a {
   color: #727272;
   text-align: center;
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -101,15 +136,18 @@ p {
   margin-bottom: 27px;
   text-align: center;
   color: #3d3d3d;
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
 }
 
+.separation-line img {
+  margin-bottom: 5px;
+}
+
 .tabs {
-  margin-top: 52px;
   margin: 0 auto;
   padding-top: 52px;
 }
@@ -122,7 +160,7 @@ p {
 .login-page-tab {
   margin-right: 12px;
   color: #3d3d3d;
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -132,15 +170,11 @@ p {
 .register-page-tab {
   margin-left: 12px;
   color: #46a358;
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
-}
-
-.bottom-line {
-  background: #46a358;
 }
 
 .close-button {
