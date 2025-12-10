@@ -1,49 +1,38 @@
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  border: none;
-  list-style: none;
-  box-sizing: border-box;
   font-family: "Cera Pro", sans-serif;
 }
 
 @font-face {
   font-family: "Cera Pro";
   src: url("./fonts/CeraPro-Light.woff2") format("woff2"),
-    url("./fonts/CeraPro-Light.woff") format("woff"),
-    url("./fonts/CeraPro-Light.eot") format("eot"),
-    url("./fonts/CeraPro-Light.woff") format("ttf");
+    url("./fonts/CeraPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cera Pro";
   src: url("./fonts/CeraPro-Regular.woff2") format("woff2"),
-    url("./fonts/CeraPro-Regular.woff") format("woff"),
-    url("./fonts/CeraPro-Regular.eot") format("eot"),
-    url("./fonts/CeraPro-Regular.woff") format("ttf");
+    url("./fonts/CeraPro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cera Pro";
   src: url("./fonts/CeraPro-Medium.woff2") format("woff2"),
-    url("./fonts/CeraPro-Medium.woff") format("woff"),
-    url("./fonts/CeraPro-Medium.eot") format("eot"),
-    url("./fonts/CeraPro-Medium.woff") format("ttf");
+    url("./fonts/CeraPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cera Pro";
   src: url("./fonts/CeraPro-Bold.woff2") format("woff2"),
-    url("./fonts/CeraPro-Bold.woff") format("woff"),
-    url("./fonts/CeraPro-Bold.eot") format("eot"),
-    url("./fonts/CeraPro-Bold.woff") format("ttf");
+    url("./fonts/CeraPro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -51,11 +40,10 @@
 @font-face {
   font-family: "Cera Pro";
   src: url("./fonts/CeraPro-Black.woff2") format("woff2"),
-    url("./fonts/CeraPro-Black.woff") format("woff"),
-    url("./fonts/CeraPro-Black.eot") format("eot"),
-    url("./fonts/CeraPro-Black.woff") format("ttf");
+    url("./fonts/CeraPro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 .container {
@@ -82,7 +70,6 @@
   border-bottom: 3px solid transparent;
   color: #3d3d3d;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -102,7 +89,6 @@
   justify-content: center;
   gap: 4px;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -131,7 +117,6 @@
 h2 {
   color: #3d3d3d;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 1.4px;
@@ -141,7 +126,6 @@ h2 {
 h1 {
   color: #3d3d3d;
   font-size: 70px;
-  font-style: normal;
   font-weight: 900;
   line-height: 70px;
   text-transform: uppercase;
@@ -155,7 +139,6 @@ h1 span {
 p {
   color: #727272;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 44px;
@@ -165,7 +148,6 @@ p {
   padding: 11px 27px;
   align-self: flex-start;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
