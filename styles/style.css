@@ -1,0 +1,129 @@
+* {
+  font-family: "Cera Pro", sans-serif;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Light.woff2") format("woff2"),
+    url("../fonts/CeraPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"),
+    url("../fonts/CeraPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2"),
+    url("../fonts/CeraPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.products-page-wrapper {
+  padding: 171px 105px 82px 135px;
+  display: flex;
+  gap: 50px;
+}
+
+.categories-sidebar {
+  padding: 14px 189px 377px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #fbfbfb;
+}
+
+.categories-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.categories-item {
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.categories-item.active {
+  color: #46a358;
+}
+
+.products-navigation {
+  display: flex;
+  gap: 385px;
+}
+
+.products-navigation-tabs {
+  display: flex;
+  gap: 40px;
+}
+
+.products-navigation-tab {
+  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.products-navigation-tab.active {
+  color: #46a358;
+  font-weight: 700;
+  border-bottom: #46a358 solid 1px;
+}
+
+.sort-wrapper {
+  display: flex;
+  gap: 8px;
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+
+.product-image {
+  width: 250px;
+  height: 250px;
+}
