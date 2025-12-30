@@ -209,7 +209,18 @@
   font-weight: 400;
   line-height: 16px;
   margin-left: 13px;
-  text-decoration: line-through;
+  position: relative;
+}
+
+.old-price::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #cbcbcb;
+  transform: translateY(-50%);
 }
 
 .img-wrapper {
