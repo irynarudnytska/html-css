@@ -183,3 +183,60 @@
   font-weight: 700;
   background: #46a358;
 }
+
+.img-wrapper.special-price {
+  position: relative;
+}
+
+.discount-label {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  z-index: 1;
+  background: #46a358;
+  width: 80px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.old-price {
+  color: #a5a5a5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 13px;
+  text-decoration: line-through;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.product-icon-btn-wrapper {
+  display: flex;
+  gap: 26px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+}
+
+.product-icon-btn-wrapper button {
+  background-color: inherit;
+}
+
+.product-card:hover .product-icon-btn-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-card:hover .img-wrapper {
+  box-shadow: 0 -1px #46a358;
+}
