@@ -139,7 +139,7 @@
   padding: 25px 23px 19px 22px;
   background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
   display: flex;
-  gap: 155px;
+  justify-content: space-between;
 }
 
 .footer-shop-contacts-wrapper {
