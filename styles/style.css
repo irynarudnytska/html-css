@@ -139,6 +139,7 @@
 .img-wrapper {
   padding: 25px 4px;
   margin-bottom: 12px;
+  background: #fbfbfb;
 }
 
 .img-wrapper.unique-size {
@@ -229,18 +230,22 @@
 
 .product-icon-btn-wrapper {
   display: flex;
-  gap: 26px;
+  gap: 10px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s;
   position: absolute;
   left: 50%;
-  bottom: 14px;
+  bottom: 7px;
   transform: translateX(-50%);
 }
 
-.product-icon-btn-wrapper button {
-  background-color: inherit;
+.product-card-icon {
+  border-radius: 4px;
+  background: #fff;
+  padding: 7px 6px;
+  width: 35px;
+  height: 35px;
 }
 
 .product-card:hover .product-icon-btn-wrapper {
