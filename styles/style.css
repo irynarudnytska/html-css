@@ -70,6 +70,9 @@
 
 .products-page-wrapper {
   padding: 171px 105px 82px 135px;
+}
+
+.menu-list {
   display: flex;
   gap: 50px;
 }
@@ -509,4 +512,80 @@ p {
 
 .product-card:hover .img-wrapper {
   box-shadow: 0 -1px #46a358;
+}
+
+.menu-item.has-vertical-dropdown {
+  position: relative;
+}
+
+.vertical-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateX(-30%);
+  width: 188px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  padding-top: 16px;
+}
+
+.vertical-dropdown a {
+  display: block;
+  padding: 7px 88px 8px 14px;
+  background-color: #edf6ee;
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-item.has-vertical-dropdown:hover .vertical-dropdown,
+.menu-item.has-vertical-dropdown .vertical-dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-item.has-vertical-dropdown:hover {
+  border-bottom: 3px solid #46a358;
+}
+
+.has-horizontal-dropdown > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 17px;
+}
+
+.horizontal-dropdown {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  left: 100%;
+  top: 0px;
+  padding: 16px 0 0 2px;
+  width: 178px;
+}
+
+.horizontal-dropdown a {
+  display: block;
+  padding: 7px 14px 8px 14px;
+}
+
+.has-horizontal-dropdown:hover .horizontal-dropdown,
+.horizontal-dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.has-horizontal-dropdown:hover > a {
+  font-weight: 700;
+  color: #fff;
+  background: #1a712a;
+}
+
+.has-horizontal-dropdown:hover .arrow-right-icon {
+  color: #fff;
+  transform: rotate(180deg);
 }
