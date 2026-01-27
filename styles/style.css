@@ -299,6 +299,7 @@ p {
 .img-wrapper {
   padding: 25px 4px;
   margin-bottom: 12px;
+  background: #fbfbfb;
 }
 
 .img-wrapper.unique-size {
@@ -436,4 +437,76 @@ p {
 .icon-arrow-right-v1 {
   color: #fff;
   fill: currentColor;
+}
+
+.img-wrapper.special-price {
+  position: relative;
+}
+
+.discount-label {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  z-index: 1;
+  background: #46a358;
+  width: 80px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.old-price {
+  color: #a5a5a5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 13px;
+  position: relative;
+}
+
+.old-price::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #cbcbcb;
+  transform: translateY(-50%);
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.product-icon-btn-wrapper {
+  display: flex;
+  gap: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  transform: translateX(-50%);
+}
+
+.product-card-icon {
+  border-radius: 4px;
+  background: #fff;
+  padding: 7px 6px;
+  width: 35px;
+  height: 35px;
+}
+
+.product-card:hover .product-icon-btn-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-card:hover .img-wrapper {
+  box-shadow: 0 -1px #46a358;
 }
