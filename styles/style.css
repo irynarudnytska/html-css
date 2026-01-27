@@ -1,0 +1,157 @@
+* {
+  font-family: "Cera Pro", sans-serif;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Light.woff2") format("woff2"),
+    url("../fonts/CeraPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"),
+    url("../fonts/CeraPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2"),
+    url("../fonts/CeraPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  padding: 30px 120px 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+  margin-bottom: 12px;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-item {
+  padding: 8px 0 25px;
+  border-bottom: 3px solid transparent;
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-item.active {
+  border-color: #46a358;
+  font-weight: 700;
+}
+
+.btn-login {
+  border-radius: 6px;
+  background-color: #46a358;
+  color: #fff;
+  padding: 7px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    98deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  padding: 68px 93px 85px 40px;
+}
+
+.homepage-plant-img {
+  width: 507px;
+  height: 450px;
+}
+
+h2 {
+  color: #3d3d3d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #3d3d3d;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin: 7px 0 5px;
+}
+
+h1 span {
+  color: #46a358;
+}
+
+p {
+  color: #727272;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 44px;
+}
+
+.btn-shop-now {
+  padding: 11px 27px;
+  align-self: flex-start;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #46a358;
+  color: #fff;
+}
