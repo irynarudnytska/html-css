@@ -1,5 +1,8 @@
 * {
   font-family: "Cera Pro", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-style: normal;
 }
 
 @font-face {
@@ -35,6 +38,7 @@
     url("../fonts/CeraPro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -61,6 +65,11 @@
 }
 
 .menu {
+  font-display: swap;
+}
+
+.products-page-wrapper {
+  padding: 171px 105px 82px 135px;
   display: flex;
   gap: 50px;
 }
@@ -154,4 +163,137 @@ p {
   border-radius: 6px;
   background: #46a358;
   color: #fff;
+}
+
+.categories-sidebar {
+  padding: 14px 189px 377px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #fbfbfb;
+}
+
+.categories-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3d3d3d;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.categories-item {
+  color: #3d3d3d;
+  font-weight: 400;
+}
+
+.categories-item.active {
+  color: #46a358;
+}
+
+.side-banner {
+  width: 310px;
+  height: 470px;
+}
+
+.products-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.products-navigation-tabs {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.products-navigation-tab.active {
+  color: #46a358;
+  font-weight: 700;
+  border-bottom: #46a358 solid 1px;
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-wrapper label,
+.sort-wrapper select {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 70px;
+}
+
+.product-image {
+  width: 250px;
+  height: 250px;
+}
+
+.product-image[alt="Beach Spider Lily"] {
+  width: 224px;
+  height: 286px;
+}
+
+.img-wrapper {
+  padding: 25px 4px;
+  margin-bottom: 12px;
+}
+
+.img-wrapper.unique-size {
+  padding: 6px 13px;
+}
+
+.product-name {
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.product-price {
+  color: #46a358;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pagination-list {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  margin-top: 90px;
+}
+
+.pagination-item {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  color: #3d3d3d;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.pagination-item.active {
+  color: #fff;
+  font-weight: 700;
+  background: #46a358;
 }
