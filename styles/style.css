@@ -972,3 +972,294 @@ a svg {
 .bottom-line {
   background: #46a358;
 }
+
+/* === MEDIA QUERIES (DESKTOP-FIRST) === */
+
+@media (max-width: 1199px) {
+  .container {
+    padding: 30px 60px 13px;
+  }
+
+  .hero-section-content {
+    padding: 50px 40px;
+  }
+
+  .homepage-plant-img {
+    width: 420px;
+    height: auto;
+  }
+
+  .products-section {
+    gap: 30px;
+  }
+
+  .featured-articles-wrapper {
+    gap: 20px;
+  }
+
+  .blog-posts-wrapper {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .footer-navigation-wrapper {
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    width: 100%;
+  }
+
+  .footer-navigation-menu {
+    flex: 1 1 220px;
+    min-width: 220px;
+  }
+
+  .social-media-and-payment-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-payment-info img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-list {
+    gap: 25px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-section-content {
+    padding: 40px 30px;
+    align-items: center;
+  }
+
+  .hero-section-content h1,
+  .hero-section-content h1 span {
+    font-size: 50px;
+    line-height: 52px;
+  }
+
+  .btn-shop-now {
+    align-self: center;
+  }
+
+  .homepage-plant-img {
+    width: 360px;
+  }
+
+  .products-section {
+    flex-direction: column;
+  }
+
+  .sidebar-wrapper {
+    width: 100%;
+  }
+
+  .categories-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .categories-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .side-banner {
+    display: none;
+  }
+
+  .products-list {
+    justify-content: center;
+  }
+
+  .featured-articles-wrapper {
+    flex-direction: column;
+  }
+
+  .featured-article {
+    justify-content: center;
+  }
+
+  .blog-posts-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-navigation-wrapper {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-shop-contacts {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .featured-articles-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .featured-article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featured-article-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .featured-article-content {
+    padding: 25px 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .featured-article-btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-section-content h1,
+  .hero-section-content h1 span {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .products-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .products-navigation-tabs {
+    gap: 20px;
+  }
+
+  .product-image {
+    width: 200px;
+    height: auto;
+  }
+
+  .blog-card {
+    max-width: 100%;
+  }
+
+  .footer-shop-contacts {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section-content {
+    padding: 25px 15px;
+  }
+
+  .hero-section-content h1,
+  .hero-section-content h1 span {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .hero-section-content p {
+    margin-bottom: 25px;
+  }
+
+  .products-list {
+    row-gap: 40px;
+  }
+
+  .pagination-list {
+    justify-content: center;
+  }
+
+  .registration-page-wrapper {
+    padding: 30px 20px 0;
+    max-width: 100%;
+  }
+
+  .registration-page-tab {
+    font-size: 16px;
+  }
+
+  .footer-navigation-menu {
+    margin-right: 0;
+  }
+
+  .social-media-icons {
+    justify-content: center;
+  }
+
+  .copyright-info {
+    font-size: 12px;
+  }
+
+  .footer-shop-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-features-card {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-features-card-content {
+    max-width: 100%;
+  }
+}
