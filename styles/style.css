@@ -5,6 +5,16 @@
   font-style: normal;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
+button svg,
+a svg {
+  pointer-events: none;
+}
+
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Light.woff2") format("woff2"),
@@ -51,7 +61,7 @@
 }
 
 .container {
-  padding: 30px 120px 52px;
+  padding: 30px 120px 13px;
   display: flex;
   flex-direction: column;
 }
@@ -66,10 +76,6 @@
 
 .menu {
   font-display: swap;
-}
-
-.products-page-wrapper {
-  padding: 171px 105px 82px 135px;
 }
 
 .menu-list {
@@ -105,7 +111,7 @@
   line-height: normal;
 }
 
-.container-main {
+.hero-section {
   display: flex;
   flex-direction: row;
   background: linear-gradient(
@@ -113,9 +119,10 @@
     rgba(245, 245, 245, 0.5) -23.46%,
     rgba(245, 245, 245, 0.5) 107.51%
   );
+  margin-bottom: 46px;
 }
 
-.container-text {
+.hero-section-content {
   display: flex;
   flex-direction: column;
   padding: 68px 93px 85px 40px;
@@ -126,7 +133,7 @@
   height: 450px;
 }
 
-h2 {
+.hero-section-content h2 {
   color: #3d3d3d;
   font-size: 14px;
   font-weight: 500;
@@ -135,7 +142,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h1 {
+.hero-section-content h1 {
   color: #3d3d3d;
   font-size: 70px;
   font-weight: 900;
@@ -144,21 +151,41 @@ h1 {
   margin: 7px 0 5px;
 }
 
-h1 span {
+.hero-section-content h1 span {
   color: #46a358;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
 }
 
-p {
-  font-display: swap;
+.hero-section-content p {
+  color: #727272;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 44px;
+}
+
+.btn-shop-now {
+  padding: 11px 27px;
+  align-self: flex-start;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #46a358;
+  color: #fff;
 }
 
 .featured-articles-section {
-  padding: 68px 119px 0px;
   margin-bottom: 138px;
 }
 
 .blog-posts-section {
-  padding: 0px 119px 68px;
+  margin-bottom: 100px;
 }
 
 .featured-articles-wrapper {
@@ -202,20 +229,20 @@ p {
   margin-bottom: 44px;
 }
 
-.btn-shop-now {
-  padding: 11px 27px;
-  align-self: flex-start;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  background: #46a358;
-  color: #fff;
+.products-section {
+  display: flex;
+  gap: 54px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.sidebar-wrapper {
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .categories-sidebar {
-  padding: 14px 189px 377px 30px;
+  padding: 14px 24px 19px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -303,6 +330,7 @@ p {
   padding: 25px 4px;
   margin-bottom: 12px;
   background: #fbfbfb;
+  position: relative;
 }
 
 .img-wrapper.unique-size {
@@ -417,10 +445,6 @@ p {
   margin-bottom: 4px;
 }
 
-.footer {
-  padding: 91px 120px 22px;
-}
-
 .footer-top {
   display: flex;
   gap: 62px;
@@ -519,10 +543,6 @@ p {
   height: 1px;
   background: #cbcbcb;
   transform: translateY(-50%);
-}
-
-.img-wrapper {
-  position: relative;
 }
 
 .product-icon-btn-wrapper {
@@ -677,10 +697,11 @@ p {
 }
 
 .footer-shop-contacts {
-  padding: 25px 23px 19px 22px;
+  padding: 25px 23px 19px;
   background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer-contacts-item {
@@ -694,10 +715,6 @@ p {
   line-height: 22px;
 }
 
-.footer-contacts-item.logo {
-  margin-right: 155px;
-}
-
 .footer-bottom {
   padding: 33px 155px 27px 25px;
   display: flex;
@@ -706,16 +723,20 @@ p {
 }
 
 .footer-navigation-title {
-  margin-bottom: 8px;
   color: #3d3d3d;
+  font-family: "Cera Pro";
   font-size: 18px;
+  font-style: normal;
   font-weight: 700;
   line-height: 16px;
+  margin-bottom: 8px;
 }
 
-.footer-navigation-list {
+.footer-navigation-list a {
   color: #3d3d3d;
+  font-family: "Cera Pro";
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
   line-height: 30px;
 }
@@ -791,14 +812,163 @@ p {
 
 .footer-contacts-item.location {
   gap: 9px;
-  margin-right: 168px;
 }
 
 .footer-contacts-item.email {
   gap: 12px;
-  margin-right: 155px;
 }
 
 .footer-contacts-item.phone {
   gap: 10px;
+}
+
+.registration-page-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 52px 100px 0;
+  position: relative;
+  border-bottom: #46a358 solid 10px;
+}
+
+.registration-page-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.registration-page-tab {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  background-color: #ffffff;
+}
+
+.registration-page-tab.active {
+  color: #46a358;
+}
+
+.registration-page-wrapper p {
+  margin: 40px 0 14px;
+  white-space: nowrap;
+  color: #3d3d3d;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.registration-form input {
+  padding: 11px 0 11px 14px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  color: #a5a5a5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.password-field-icon {
+  position: relative;
+}
+
+.password-field-icon input {
+  width: 100%;
+  position: relative;
+  padding-right: 40px;
+}
+
+.password-field-icon svg {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+
+.registration-form-btn {
+  margin: 25px 0 36px;
+  border-radius: 5px;
+  background-color: #46a358;
+  padding: 16px 0 13px 0;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.social-media-registration {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-media-link {
+  color: #727272;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  padding: 10px 0;
+}
+
+.social-media-link:last-child {
+  margin-bottom: 40px;
+}
+
+.social-media-link svg,
+.social-media-link img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.social-media-link.google svg {
+  margin-right: 9px;
+}
+
+.social-media-link.facebook img {
+  margin-right: 4px;
+}
+
+.separation-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.separation-line span {
+  color: #3d3d3d;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.separation-line::before,
+.separation-line::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 6px;
+}
+
+.bottom-line {
+  background: #46a358;
 }
