@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form Popup</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="contact-popup-wrapper">
+      <div class="popup__overlay"></div>
+      <div class="popup__window">
+        <button class="popup__close-button" type="button">
+          <svg class="close-popup-icon" width="32px" height="32px">
+            <use href="images/sprite.svg#close-popup-icon"></use>
+          </svg>
+        </button>
+        <h2 class="popup__title hero">We would like to help you</h2>
+        <form class="popup__form">
+          <input class="popup__input" type="text" placeholder="Name" required />
+          <textarea
+            class="popup__textarea"
+            placeholder="Message"
+            required
+          ></textarea>
+          <span class="popup__contact-title"> HOW TO ANSWER YOU? </span>
+          <input
+            class="popup__input"
+            type="tel"
+            placeholder="Phone number"
+            required
+          />
+          <input
+            class="popup__input"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <button class="popup__button" type="submit">Send message</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
