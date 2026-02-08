@@ -55,6 +55,11 @@ body {
   color: var(--basic-white);
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 .hero {
   font-size: 38px;
   font-weight: var(--font-bold);
